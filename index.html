@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            width: 100%;
+        }
+
+        .left {
+            background-color: azure;
+            color: black;
+            flex: 1;
+        }
+
+        .right {
+            background-color: azure;
+            color: black;
+            display: flex;
+            flex: 1;
+            justify-content: right;
+        }
+
+        img {
+            width: 150px;
+        }
+
+        .button {
+            padding: 10px;
+            background-color: teal;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: darkcyan;
+        }
+
+        @media( max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+            .right {
+                margin-top: 10px;
+                justify-content: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>June Chepkemoi</h1>
+            <p>Is a young lady from Nakuru county passionately pursuing IT at Mount Kenya University</p>
+            <button class="button">Get Started</button>
+        </div>
+        <div class="right">
+            <img src="./june.jpg" alt="placeholder Image">
+        </div>
+    </div>
+</body>
+</html>
